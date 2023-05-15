@@ -1,0 +1,42 @@
+docs_dir: ../../docs
+
+site_name: Somename
+site_description: Somename
+site_author: Somename Team
+site_url: 
+
+repo_name: tia-portal/global/build-workflow
+repo_url: 
+edit_uri: '-/edit/main/docs/'
+
+plugins:
+    - search
+
+nav:
+  - Home: README.md
+  - User Guide:
+    - Overview: user-guide/index.md
+  - Contributor Guide:
+    - Overview: contributor-guide/index.md
+ 
+theme:
+  name: 'code-siemens-code-docs-theme'
+  palette:
+   - scheme: default
+     primary: teal
+     accent: teal
+  include_search_page: true
+  search_index_only: true
+  language: en
+  favicon: images/favicon.ico  
+  include_search_page: false
+  search_index_only: true
+  features:
+    - navigation.top
+    - navigation.tabs
+    - navigation.expand
+    - page.toc
+
+extra_javascript:
+  - https://cdn.siemens-web.com/js/mermaid/8.12.0/mermaid.min.js
+
