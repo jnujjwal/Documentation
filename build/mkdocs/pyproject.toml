@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "tpe-build-workflow"
+version = "0.1.0"
+description = ""
+authors = ["TIA Portal Build Workflow Team"]
+
+[[tool.poetry.source]]
+name = "code-docs-theme"
+url = "https://code.siemens.com/api/v4/projects/64538/packages/pypi/simple/"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+mkdocs-code-siemens-code-docs-theme = {version = "^3.0.1", source = "code-docs-theme"}
+mkdocs = "1.4.2"
+pymdown-extensions = "^9.9"
+certifi = "2022.12.7"
+pygments = "^2.14"
+mkdocs-redirects = "^1.2.0"
+plantuml-markdown = "^3.8.2"
+jsonschema = "^4.17.3"
+python-gitlab = "^3.13.0"
+requests-cache = "^1.0.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
